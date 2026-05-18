@@ -1,0 +1,5 @@
+<div class="card">
+  <h2>Your question: <em><%= params[:question] %></em></h2>
+  <p class="coach-answer mt-3"><%= @answer %></p>
+  <%= link_to "Ask another question", ask_path, class: "btn btn-secondary mt-3" %>
+</div>

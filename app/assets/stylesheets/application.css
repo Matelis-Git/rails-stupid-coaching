@@ -1,10 +1,88 @@
 /*
  * This is a manifest file that'll be compiled into application.css.
- *
- * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
- * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
- * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
- * depending on specificity.
- *
- * Consider organizing styles into separate files for maintainability.
+ * ...
  */
+
+body {
+  background-color: #1b0900;
+  color: #e0e0e0;
+  font-family: 'Georgia', serif;
+}
+
+h1, h2 {
+  color: #e0e0e0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Card style */
+.card {
+  background-color: #8cebb0d7;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 600px;
+  margin: 80px auto;
+  box-shadow: 4px 5px 30px rgba(218, 15, 15, 0.884);
+}
+
+/* Form inputs */
+.form-control {
+  background-color: #aec9b0;
+  border: 1px solid #ffffff;
+  color: #e0e0e0;
+  border-radius: 6px;
+}
+
+.form-control:focus {
+  background-color: #bbddcf;
+  border-color: #ff0000;
+  color: #e0e0e0;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+/* Submit button */
+.btn-primary {
+  background-color: #8b0000;
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+  background-color: #cc0000;
+}
+
+/* SCARY coach answer */
+.coach-answer {
+  color: #8b0000;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-shadow: 0 0 8px #ff000066;
+  letter-spacing: 2px;
+  animation: flicker 2s infinite;
+}
+
+/* Flicker animation for extra spookiness */
+@keyframes flicker {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.85; }
+  75%  { opacity: 1; }
+  90%  { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+/* Back button */
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #8b0000;
+  color: #8b0000;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.btn-secondary:hover {
+  background-color: #8b0000;
+  color: white;
+}
